@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<title></title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	
+	<link href="https://fonts.googleapis.com/css2?family=Handlee&family=Indie+Flower&family=Roboto:wght@300;400&family=Tapestry&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+
+		*{ font-family: Handlee;margin: 0px;padding: 0px;font-weight: bold; }
+
+		@font-face
+		{
+			font-family: chunk;
+			src: url(font/Chunk Five Print);
+		}
+
+		ul li:hover{font-size: 25px;};
+
+		img:hover{height: 400px;}
+
+		.box1
+		{
+			width: 98%;
+			height: 300px;
+			border-radius: 20px;
+
+			transition: height,width,box-shadow 0.3s,0.3s,0.3s;
+		}
+
+		.box1:hover
+		{
+			width: 100%;
+			height: 400px;
+			box-shadow: 1px 1px 8px #595858;
+		}
+
+		.card1{ transition: box-shadow 0.1s; }
+
+		.card1:hover{box-shadow: 1px 1px 8px #595858;}
+
+		.container1{transition: box-shadow,color 0.1s,0.1s;}
+
+		.container1:hover{box-shadow: 1px 1px 8px #595858;color: transparent;}
+
+		.card2{ color: transparent;cursor: pointer;transition:color,box-shadow 0.1s,0.1s; }
+
+		.card2:hover{ bgcolor: #0e7bf0;color:#87898a;box-shadow: 1px 1px 8px #595858; }
+
+		.img1
+		{
+			background-image: url(pics/img23.jpg);
+			background-size:100% 100%;
+			color: transparent;
+			border: 1px solid #595858;
+			transition: background-image,box-shadow,color 0.1s,0.1s,0.1s;
+		}
+		.img1:hover
+		{
+			background-image: linear-gradient(to right,rgba(1,1,1,0.4),rgba(2,2,2,0.5)),url(pics/img23.jpg);
+			background-size: 100% 100%;
+			box-shadow: 1px 1px 9px #595858;
+			color: white;
+		}
+
+		.img2
+		{
+			background-image: url(pics/img24.jpg);
+			background-size:100% 100%;
+			color: transparent;
+			border: 1px solid #595858;
+			transition: background-image,box-shadow,color 0.1s,0.1s,0.1s;
+		}
+		.img2:hover
+		{
+			background-image: linear-gradient(to right,rgba(1,1,1,0.4),rgba(2,2,2,0.5)),url(pics/img24.jpg);
+			background-size: 100% 100%;
+			box-shadow: 1px 1px 9px #595858;
+			color: white;
+		}
+
+		.img3
+		{
+			background-image: url(pics/img25.jpg);
+			background-size:100% 100%;
+			color: transparent;
+			border: 1px solid #595858;
+			transition: background-image,box-shadow,color 0.1s,0.1s,0.1s;
+		}
+		.img3:hover
+		{
+			background-image: linear-gradient(to right,rgba(1,1,1,0.4),rgba(2,2,2,0.5)),url(pics/img25.jpg);
+			background-size: 100% 100%;
+			box-shadow: 1px 1px 9px #595858;
+			color: white;
+		}
+
+		.img4
+		{
+			background-image: url(pics/img26.webp);
+			background-size:100% 100%;
+			color: transparent;
+			border: 1px solid #595858;
+			transition: background-image,box-shadow,color 0.1s,0.1s,0.1s;
+		}
+		.img4:hover
+		{
+			background-image: linear-gradient(to right,rgba(1,1,1,0.4),rgba(2,2,2,0.5)),url(pics/img26.webp);
+			background-size: 100% 100%;
+			box-shadow: 1px 1px 9px #595858;
+			color: white;
+		}
+
+		.img5
+		{
+			background-image: url(pics/img27.png);
+			background-size:100% 100%;
+			color: transparent;
+			border: 1px solid #595858;
+			transition: background-image,box-shadow,color 0.1s,0.1s,0.1s;
+		}
+		.img5:hover
+		{
+			background-image: linear-gradient(to right,rgba(1,1,1,0.4),rgba(2,2,2,0.5)),url(pics/img27.png);
+			background-size: 100% 100%;
+			box-shadow: 1px 1px 9px #595858;
+			color: white;
+		}
+
+		.img6
+		{
+			background-image: url(pics/img31.jpg);
+			background-size:100% 100%;
+			color: transparent;
+			border: 1px solid #595858;
+			transition: background-image,box-shadow,color 0.1s,0.1s,0.1s;
+		}
+		.img6:hover
+		{
+			background-image: linear-gradient(to right,rgba(1,1,1,0.4),rgba(2,2,2,0.5)),url(pics/img31.jpg);
+			background-size: 100% 100%;
+			box-shadow: 1px 1px 9px #595858;
+			color: white;
+		}
+
+	</style>
+</head>
+<body style="background-image:url(pics/wallpaper.webp);background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
+
+
+
+
+
+<div class="container-fluid">
+
+	            		<!---------------navbar start----------------->
+
+	
+	<div class="row">
+		
+		<div class="col-12 fixed-top bg-light text-center" style="box-shadow: 0px 10px 10px #3d3c3c;"><a href="project.html"><i class="fa-solid fa-house-user fs-1 text-secondary"></i></a></div>
+
+	</div>
+
+
+
+
+							<!-----------navbar end---------------->
+
+
+
+							<!-----------about start--------------->
+
+
+
+	<div class="row" style="background-image:linear-gradient(to right,rgba(5,5,5,0.5),rgba(4,4,4,0.4)),url(pics/about.jpg);background-size: 100% 100%;margin-top:30px;">
+		
+		<div class="col-12 text-center text-light fs-1 my-5 py-5"><p>ABOUT US</p></div>
+	</div>
+
+
+
+	<div class="row py-5 bg-light">
+		
+		<div class="col-md-5 text-center">
+
+			<p style="font-family:chunk;font-size: 100px;">KTS</p>
+			<p class="fs-5" style="margin-top:-50px;">Kaushik Technical Sol'n</p>
+			<p class="fs-4 text-secondary">We are team of young professionals making feasible all your online business needs on your demand with over 8+years of experience with a leading name in the market.</p>
+
+			<button class="btn btn-secondary">EXPLORE</button>
+
+		</div>
+
+
+		<div class="col-md-7" style="background-image:url(pics/gif1.gif);background-size: 100% 350px;background-repeat:no-repeat;height: 350px;"></div>
+	</div>
+
+
+
+
+							<!-----------about end---------------->
+
+
+
+
+							<!-----------leadership start--------->
+
+
+
+
+	<div class="row mt-5">
+		
+		<div class="col-12 fs-2 text-center my-4" style="margin-bottom:100px;">OUR LEADERSHIP</div>
+
+		<div class="col-md-4 py-5 text-center text-light" style="margin-top: 100px;">
+
+			<div class="container container1" style="width:98%;height: 300px;background-color: #595858;border-radius: 20px;">
+
+				<img src="pics/img7.jpg" width="98%" height="300px" style="margin-top:-100px;" class="box1">
+				<p class="fs-4">SAURAV KAUSHIK</p>
+				<p class="fs-5" style="margin-top:-20px">(CEO)</p>
+
+			</div>
+		</div>
+
+
+		<div class="col-md-4 py-5 text-center text-light" style="margin-top: 100px;">
+
+			<div class="container container1" style="width:98%;height: 300px;background-color: #595858;border-radius: 20px">
+				
+				<img src="pics/img7.jpg" width="98%" height="300px" style="margin-top:-100px;" class="box1">
+				<p class="fs-4">SAURAV KAUSHIK</p>
+				<p class="fs-5" style="margin-top:-20px">(MD)</p>
+
+			</div>
+		</div>
+
+
+		<div class="col-md-4 py-5 text-center text-light" style="margin-top: 100px;">
+
+			<div class="container container1" style="width:98%;height: 300px;background-color: #595858;border-radius: 20px;">
+				
+				<img src="pics/img7.jpg" width="98%" height="300px" style="margin-top:-100px;" class="box1">
+				<p class="fs-4">SAURAV KAUSHIK</p>
+				<p class="fs-5" style="margin-top:-20px">(CoD)</p>
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+							<!-------leadership end-------------->
+
+
+
+							<!-------services start-------------->
+
+
+
+
+	<div class="row" style="background-image:linear-gradient(to right,rgba(210,211,214,0.6),rgba(211,212,215,0.5)),url(pics/service.png);background-size:100% 100%;">
+
+		<div class="container ps-5 py-5" style="font-size:20px;">
+			
+			<p class="fs-1">Services we offer</p>
+			<ul>
+				<li>Website Design</li>
+				<li>Digital Marketing</li>
+				<li>Website Development</li>
+				<li>Branding</li>
+				<li>Search Engine Optimization</li>
+				<li>E-Commerce Development</li>
+				<li>Hosting</li>
+				<li>Mobile App Development</li>
+				<li>CMS Plugin Development</li>
+				<li>Dynamic Website</li>
+				<li>Custom Design</li>
+				<li>Consulting</li>
+			</ul>
+		</div>
+		
+
+	</div>
+
+
+
+							<!------------services end------------->
+
+
+
+							<!------------services field start------->
+
+
+
+
+	<div class="row my-5">
+		
+		<div class="col-12 fs-1 text-center my-5">WE WORK IN ALL FIELDS</div>
+
+		<div class="col-12 col-sm-6 col-md-4 px-3 my-2">
+			<div class="card card2 bg-light">
+				<div class="card-body fs-5 d-flex justify-content-evenly"><i class="fa-solid fa-school fs-3"></i><span class="text-dark">EDUCATION</span><i class="fa-solid fa-arrow-right-long fs-3"></i></div>
+			</div>
+		</div>
+
+
+		<div class="col-12 col-sm-6 col-md-4 px-3 my-2">
+			<div class="card card2 bg-light">
+				<div class="card-body fs-5 d-flex justify-content-around"><i class="fa-solid fa-building-columns fs-3"></i></i><span class="text-dark">GOVERNMENT</span><i class="fa-solid fa-arrow-right-long fs-3"></i></div>
+			</div>
+		</div>
+
+
+		<div class="col-12 col-sm-6 col-md-4 px-3 my-2">
+			<div class="card card2 bg-light">
+				<div class="card-body fs-5 d-flex justify-content-around"><i class="fa-solid fa-microchip fs-3"></i></i></i><span class="text-dark">TECHNOLOGY</span><i class="fa-solid fa-arrow-right-long fs-3"></i></div>
+			</div>
+		</div>
+
+
+		<div class="col-12 col-sm-6 col-md-4 px-3 my-2">
+			<div class="card card2 bg-light">
+				<div class="card-body fs-5 d-flex justify-content-around"><i class="fa-solid fa-volleyball fs-3"></i></i></i><span class="text-dark">SPORTS</span><i class="fa-solid fa-arrow-right-long fs-3"></i></div>
+			</div>
+		</div>
+
+
+		<div class="col-12 col-sm-6 col-md-4 px-3 my-2">
+			<div class="card card2 bg-light">
+				<div class="card-body fs-5 d-flex justify-content-around"><i class="fa-solid fa-hotel fs-3"></i></i></i><span class="text-dark">HOSPITALITY</span><i class="fa-solid fa-arrow-right-long fs-3"></i></div>
+			</div>
+		</div>
+
+
+		<div class="col-12 col-sm-6 col-md-4 px-3 my-2">
+			<div class="card card2 bg-light">
+				<div class="card-body fs-5 d-flex justify-content-around"><i class="fa-solid fa-shop fs-3"></i></i></i><span class="text-dark">START UP</span><i class="fa-solid fa-arrow-right-long fs-3"></i></div>
+			</div>
+		</div>
+
+
+		<div class="col-12 col-sm-6 col-md-4 px-3 my-2">
+			<div class="card card2 bg-light">
+				<div class="card-body fs-5 d-flex justify-content-around"><i class="fa-solid fa-plane fs-3"></i></i></i></i><span class="text-dark">AVIATION</span><i class="fa-solid fa-arrow-right-long fs-3"></i></div>
+			</div>
+		</div>
+
+
+		<div class="col-12 col-sm-6 col-md-4 px-3 my-2">
+			<div class="card card2 bg-light">
+				<div class="card-body fs-5 d-flex justify-content-around"><i class="fa-solid fa-star-of-life fs-3"></i></i></i></i><span class="text-dark">HEALTHCARE</span><i class="fa-solid fa-arrow-right-long fs-3"></i></div>
+			</div>
+		</div>
+
+
+		<div class="col-12 col-sm-6 col-md-4 px-3 my-2">
+			<div class="card card2 bg-light">
+				<div class="card-body fs-5 d-flex justify-content-around"><i class="fa-solid fa-hat-cowboy fs-3"></i></i></i></i><span class="text-dark">LIFESTYLE</span><i class="fa-solid fa-arrow-right-long fs-3"></i></div>
+			</div>
+		</div>
+	</div>
+
+
+
+							<!-----------why choose us------------->
+
+
+
+	<div class="row py-5 d-flex justify-content-center bg-light">
+
+		<div class="col-12 text-center fs-1 my-5">WHY CHOOSE US...</div>
+			
+		<div class="col-10 col-sm-6 col-md-4 col-lg-2">
+	        <div class="card img1 m-1 border-0">
+	            <div class="img-overlay py-1">
+	                <h4 class="card-text text-center my-4"><b>WE ARE COMMITED TOWARDS OUR CUSTOMERS</b></h4>
+	            </div>
+	        </div>
+	    </div>
+
+	    <div class="col-10 col-sm-6 col-md-4 col-lg-2">
+	        <div class="card img2 m-1 border-0">
+	            <div class="img-overlay">
+	                <h4 class="card-text text-center my-5"><b>WE HAVE INNOVATIVE IDEAS</b></h4>
+	            </div>
+	        </div>
+	    </div>
+
+	    <div class="col-10 col-sm-6 col-md-4 col-lg-2">
+	        <div class="card img3 m-1 border-0">
+	            <div class="img-overlay py-1">
+	                <h4 class="card-text text-center my-5"><b>WE ARE LOYAL TOWARDS OUR CUSTOMERS</b></h4>
+	            </div>
+	        </div>
+	    </div>
+
+	    <div class="col-10 col-sm-6 col-md-4 col-lg-2">
+	        <div class="card img4 m-1 border-0">
+	            <div class="img-overlay py-1">
+	                <h4 class="card-text text-center my-5"><b>CUSTOMERS ARE SATISFIED BY OUR WORK</b></h4>
+	            </div>
+	        </div>
+	    </div>
+
+	    <div class="col-10 col-sm-6 col-md-4 col-lg-2">
+	        <div class="card img5 m-1 border-0">
+	            <div class="img-overlay py-2">
+	                <h4 class="card-text text-center my-4"><b>WE PROVIDE 24/7 HRS SUPPORT TO CUSTOMERS</b></h4>
+	            </div>
+	        </div>
+	    </div>
+
+	    <div class="col-10 col-sm-6 col-md-4 col-lg-2">
+	        <div class="card img6 m-1 border-0">
+	            <div class="img-overlay py-2">
+	                <h4 class="card-text text-center my-4"><b>WE PROVIDE AFFORDABLE WORK AT LOW COST</b></h4>
+	            </div>
+	        </div>
+	    </div>
+
+	</div>
+
+
+	               <!-------------why choose us end------------------->
+
+
+
+	               <!------------things know about us----------------->
+
+
+
+
+	<div class="row py-5" style="background-color:#2d2d2e;">
+		
+		<div class="col-md-4 fs-1 text-center text-light py-5">5 <br> Things You Should Know About Us</div>
+
+		<div class="col-md-8 d-flex justify-content-center text-secondary">
+			<ul style="list-style-position: inside;">
+
+				<li class="fs-5">We Help U <span class="fs-1"> Win </span> In The Bar Of <span class="fs-1"> Public Opinion </span></li>
+
+				<li class="fs-5">We Are <span class="fs-1"> Passionate </span> About Your <span class="fs-1"> Business  </span></li>
+
+				<li class="fs-5">We Are <span class="fs-1"> Part </span> Of Your <span class="fs-1"> Team</span></li>
+
+				<li class="fs-5">We Are Your  <span class="fs-1"> Brand New Energy</span></li>
+
+				<li class="fs-5">We <span class="fs-1"> Care for u</span></li>
+
+			</ul>
+		</div>
+
+	</div>
+
+
+
+						<!-----------things know about us end---------------->
+
+
+	<div class="row">
+		<div class="col-12 my-5">
+			<div class="col-12 my-4"><img src="pics/img8.jpg" width="100%" height="150px" style="box-shadow: 8px 8px 8px #7a7b7d;"></div>
+		</div>
+	</div>
+
+
+
+						<!--------------mission start------------>
+
+
+
+	<div class="row my-5">
+		
+		<div class="col-12 text-center fs-3 my-4">OUR MISSION</div>
+
+		<div class="col-12 text-center fs-5 my-4 text-secondary">Kaushik technical sol'n is leading IT Services company in India, located in Delhi. Our core principles of actually providing a service that helps clients succeed. Since we began as KTS, we have continued to learn and refine our process as the industry evolves. Along the way we developed advanced quality control and reporting, internal and external continuing education for our staff and a cutting edge content development and marketing team. With over 1000 dedicated employees, KTS has amongst the largest pool of Internet marketing professionals you will find at an agency. KTS is led by an experienced management team, which provides strategic direction and support for the company. Our management team’s hands-on approach has led to KTS becoming a leading IT Service provider around the world.</div>
+	</div>
+
+
+
+
+						<!-------------mission end-------------->
+
+
+
+					<!--------------footer start----------------->
+
+
+
+
+	<div class="row mt-5 text-light" id="contact" style="background-color:#2d2d2e;">
+		
+		<div class="col-md-6 text-center my-5 p-5">
+			<p class="fs-2 my-3"><b>KAUSHIK'S DIGITAL SOL'N</b></p><br>
+			<p class="fs-4 text-secondary"><b>We are team of young professionals making feasible all your online business needs on your demand with over 8+years of experience with a leading name in the market.</b></p>
+			<p>
+				<a href="https://facebook.com"><i class="fa-brands fa-facebook fs-2 text-secondary"></i></a>
+				<a href="https://whatsapp.com"><i class="fa-brands fa-whatsapp fs-2 text-secondary"></i></a>
+				<a href="https://instagram.com"><i class="fa-brands fa-instagram fs-2 text-secondary"></i></a>
+				<a href="https://twitter.com"><i class="fa-brands fa-twitter fs-2 text-secondary"></i></a>
+			</p>
+		</div>
+
+
+		<div class="col-6 col-md-3 my-5 p-5 ">
+			
+			<p class="fs-2 my-3 text-center"><b>SERVICES</b></p><br>
+			<b><ul style="list-style-position: inside;">
+				<li>Website Designing</li>
+				<li>Digital Marketing</li>
+				<li>Web Development</li>
+				<li>App Development</li>
+			</ul></b>
+		</div>
+
+
+		<div class="col-6 col-md-3 my-5 p-5">
+			
+			<p class="fs-2 my-3 text-center"><b>TERMS</b></p>
+			<b><ul style="list-style-position: inside;">
+				<li style="margin-top:45px;">Terms & Conditions</li>
+				<li>Refund Policy</li>
+				<li>Privacy Policy</li>
+			</ul></b>
+		</div>
+	</div>
+
+
+
+	<div class="row py-1 bg-light text-center fixed-bottom" style="word-spacing: 10px;box-shadow: 0px -5px 10px #3d3c3c;opacity: 0.7;">
+		<div class="col"><i class="fa-solid fa-phone"></i><b>(IND)91+9111117548</b></div>
+		<div class="col"><i class="fa-solid fa-at text-secondary"></i><b>abc123@gmail.com</b></div>
+		<div class="col"><i class="fa-solid fa-location-dot"></i><b>sec-9 dwarka</b></div>
+	</div>
+	
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>

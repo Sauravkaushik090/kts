@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	
+
+	<title></title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Handlee&family=Indie+Flower&family=Roboto:wght@300;400&family=Tapestry&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Blaka&family=Handlee&family=Indie+Flower&family=Roboto:wght@300;400&family=Tapestry&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+
+		*{ font-family: Handlee;margin: 0px;padding: 0px;font-weight: bold; }
+		
+
+		.img
+		{
+			background-image: linear-gradient(to right,rgba(8,8,8,0.4),rgba(7,7,7,0.3)),url(pics/img2.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+
+		ul li:hover{font-size: 20px;};
+
+		.card{
+    			border-radius: 4px;
+  				padding: 14px 80px 18px 36px;
+  				cursor: pointer;
+  				transition: box-shadow 0.1s;
+			}
+
+		.card:hover{ box-shadow: 1px 1px 8px #595858;}
+
+		.card1{ transition: box-shadow,padding-top 0.1s,0.1s; }
+
+		.card1:hover{box-shadow: 1px 1px 8px #595858;padding-top: 3px;}
+
+		.img1
+		{
+			background-image: url(pics/img23.jpg);
+			background-size:100% 100%;
+			color: transparent;
+			border: 1px solid #595858;
+			transition: background-image,box-shadow,color 0.1s,0.1s,0.1s;
+		}
+		.img1:hover
+		{
+			background-image: linear-gradient(to right,rgba(1,1,1,0.4),rgba(2,2,2,0.5)),url(pics/img23.jpg);
+			background-size: 100% 100%;
+			box-shadow: 1px 1px 9px #595858;
+			color: white;
+		}
+
+		.img2
+		{
+			background-image: url(pics/img24.jpg);
+			background-size:100% 100%;
+			color: transparent;
+			border: 1px solid #595858;
+			transition: background-image,box-shadow,color 0.1s,0.1s,0.1s;
+		}
+		.img2:hover
+		{
+			background-image: linear-gradient(to right,rgba(1,1,1,0.4),rgba(2,2,2,0.5)),url(pics/img24.jpg);
+			background-size: 100% 100%;
+			box-shadow: 1px 1px 9px #595858;
+			color: white;
+		}
+
+		.img3
+		{
+			background-image: url(pics/img25.jpg);
+			background-size:100% 100%;
+			color: transparent;
+			border: 1px solid #595858;
+			transition: background-image,box-shadow,color 0.1s,0.1s,0.1s;
+		}
+		.img3:hover
+		{
+			background-image: linear-gradient(to right,rgba(1,1,1,0.4),rgba(2,2,2,0.5)),url(pics/img25.jpg);
+			background-size: 100% 100%;
+			box-shadow: 1px 1px 9px #595858;
+			color: white;
+		}
+
+		.img4
+		{
+			background-image: url(pics/img26.webp);
+			background-size:100% 100%;
+			color: transparent;
+			border: 1px solid #595858;
+			transition: background-image,box-shadow,color 0.1s,0.1s,0.1s;
+		}
+		.img4:hover
+		{
+			background-image: linear-gradient(to right,rgba(1,1,1,0.4),rgba(2,2,2,0.5)),url(pics/img26.webp);
+			background-size: 100% 100%;
+			box-shadow: 1px 1px 9px #595858;
+			color: white;
+		}
+
+		.img5
+		{
+			background-image: url(pics/img27.png);
+			background-size:100% 100%;
+			color: transparent;
+			border: 1px solid #595858;
+			transition: background-image,box-shadow,color 0.1s,0.1s,0.1s;
+		}
+		.img5:hover
+		{
+			background-image: linear-gradient(to right,rgba(1,1,1,0.4),rgba(2,2,2,0.5)),url(pics/img27.png);
+			background-size: 100% 100%;
+			box-shadow: 1px 1px 9px #595858;
+			color: white;
+		}
+
+		.img6
+		{
+			background-image: url(pics/img31.jpg);
+			background-size:100% 100%;
+			color: transparent;
+			border: 1px solid #595858;
+			transition: background-image,box-shadow,color 0.1s,0.1s,0.1s;
+		}
+		.img6:hover
+		{
+			background-image: linear-gradient(to right,rgba(1,1,1,0.4),rgba(2,2,2,0.5)),url(pics/img31.jpg);
+			background-size: 100% 100%;
+			box-shadow: 1px 1px 9px #595858;
+			color: white;
+		}
+
+		.container1
+		{
+			box-shadow:1px 1px 8px #363634;
+			margin-top: 100px;
+			width: 85%;
+			background-color: white;
+
+			transition: width,box-shadow 1s,1s;
+
+		}
+
+		@media only screen and(max-width: 300px){
+			[class*="col"]{
+				width: 100%;
+			}
+		}
+
+	</style>
+</head>
+<body style="background-image:url(pics/wallpaper.webp);background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
+
+
+
+            <!---------------------navbar start-------------------------------->
+
+
+
+<div class="container-fluid" style="margin-right: 0px;">
+
+	<div class="row">
+
+		<div class="col fixed-top" style="padding: 0px;box-shadow: 0px 10px 10px #3d3c3c;">
+
+			<div class="navbar navbar-light bg-light navbar-expand-lg" style="opacity:0.93">
+
+				<a href="" class="navbar-brand ms-2 fs-1" style="font-family:blake">KTS</a>
+
+				<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="menu">
+
+					<div class="col d-flex justify-content-center">
+					
+						<ul class="navbar-nav">
+
+						<li class="nav-item"><a href="project.html" class="nav-link"><b>HOME</b></a></li>
+
+						<li class="nav-item dropdown">
+
+							<a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+								<b>SERVICES</b></a>
+
+								<div class="dropdown-menu bg-light" style="box-shadow:1px 1px 10px #9c9a97;font-size: 17px;">
+
+									<div class="dropdown-item"><b>Website Design</b></div>
+									<div class="dropdown-item"><b>Digital Marketing</b></div>
+									<div class="dropdown-item"><b>Website Development</b></div>
+									<div class="dropdown-item"><b>Branding</b></div>
+									<div class="dropdown-item"><b>Search Engine Optimization</b></div>
+									<div class="dropdown-item"><b>E-Commerce Development</b>    </div>
+									<div class="dropdown-item"><b>Hosting</b></div>
+									<div class="dropdown-item"><b>Mobile App Development</b>    </div>
+									<div class="dropdown-item"><b>CMS Plugin Development</b>    </div> 
+									<div class="dropdown-item"><b>Dynamic Website</b></div>
+									<div class="dropdown-item"><b>Custom Designs</b></div>
+									<div class="dropdown-item"><b>Consulting</b></div>
+
+								</div>
+						</li>
+
+						<li class="nav-item"><a href="aboutus.html" class="nav-link"><b>ABOUT</b></a></li>
+
+						<li class="nav-item"><a href="work.html" class="nav-link"><b>WORK</b></a></li>
+
+						<li class="nav-item"><a href="contact.html" class="nav-link" >CONTACT</a></li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	
+
+
+
+            <!------------------------------navbar end------------------------------>
+
+
+
+            <!-------------------------carousal/wallpaper start--------------------->
+
+
+
+
+		<div class="col-lg-12 d-none d-lg-block img1" style="margin-top:90px;padding: 0px;">
+			
+			<div class="carousel slide" data-bs-ride="carousel" id="carousel" style="margin-right: 0px;">
+			
+				<div class="carousel-inner">
+					
+					<div class="carousel-item active" data-bs-interval="3000">
+						<img src="pics/img4.jpg" class="d-block w-100" height="500px">
+					</div>
+
+					<div class="carousel-item" data-bs-interval="3000">
+						<img src="pics/img5.jpg" class="d-block w-100" height="500px">
+					</div>
+
+					<div class="carousel-item" data-bs-interval="3000">
+						<img src="pics/img6.jpg" class="d-block w-100" height="500px">
+					</div>
+
+				</div>
+
+
+				<div class="carousel-indicators">
+
+					<button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+					<button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+					<button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+
+		<div class="col-sm-12 d-lg-none d-sm-block img p-5" style="margin-top:70px;">
+			
+			<div class="container text-light my-5">
+
+				<p class="fs-4">we are at KTS</p>
+
+				<p class="fs-1">STARTING A NEW JOURNEY!!!</p>
+
+				<p class="fs-4">Bring your ideas to us. We will bring it to reality.</p>
+
+				<button class="btn btn-success mt-3 mx-2">LEARN MORE</button>
+
+			</div>
+
+
+		</div>
+
+	</div>
+
+
+
+
+			<!---------------------carousel/wallpaper end---------------------->
+
+
+
+            <!-------------------------OUR SERVICES--------------------------->
+
+
+
+
+    <div class="row text-dark d-flex justify-content-center">
+
+    	<div class="col-12 my-5 fs-3 text-center"><b>OUR SERVICES</b></div>
+
+
+    	<div class="col-11 col-lg-3 col-md-4 col-sm-6">
+    		<div class="card text-center my-5">   			 
+    			<img src="pics/img14.png" height="150px" class="card-img-top">
+    			<div class="card-footer"><button class="btn btn-secondary">Learn More</button>   </div>
+    		</div>
+    	</div>
+
+
+
+
+    	<div class="col-11 col-lg-3 col-md-4 col-sm-6">
+    		<div class="card text-center my-5">
+    			<img src="pics/img15.jpg" height="150px" class="card-img-top">
+    			<div class="card-footer"><button class="btn btn-secondary">Learn More</button>  </div>
+    		</div>
+    	</div>
+
+
+
+
+
+    	<div class="col-11 col-lg-3 col-md-4 col-sm-6">
+    		<div class="card text-center my-5">
+    			<img src="pics/img16.jpg" height="150px" class="card-img-top">
+    			<div class="card-footer"><button class="btn btn-secondary">Learn More</button>  </div>
+    		</div>
+    	</div>
+
+
+
+
+
+    	<div class="col-11 col-lg-3 col-md-4 col-sm-6">
+    		<div class="card text-center my-5">
+    			<img src="pics/img17.jpg" height="150px" class="card-img-top">
+    			<div class="card-footer"><button class="btn btn-secondary">Learn More</button>  </div>
+    		</div>
+    	</div>
+
+
+
+
+    	<div class="col-11 col-lg-3 col-md-4 col-sm-6">
+    		<div class="card text-center my-5">
+    			<img src="pics/img18.jpg" height="150px" class="card-img-top">
+    			<div class="card-footer"><button class="btn btn-secondary">Learn More</button>  </div>
+    		</div>
+    	</div>
+
+
+
+
+    	<div class="col-11 col-lg-3 col-md-4 col-sm-6">
+    		<div class="card text-center my-5">
+    			<img src="pics/img19.webp" height="150px" class="card-img-top">
+    			<div class="card-footer"><button class="btn btn-secondary">Learn More</button>  </div>
+    		</div>
+    	</div>
+
+
+
+
+    	<div class="col-11 col-lg-3 col-md-4 col-sm-6">
+    		<div class="card text-center my-5">
+    			<img src="pics/img20.jpg" height="150px" class="card-img-top">
+    			<div class="card-footer"><button class="btn btn-secondary">Learn More</button>  </div>
+    		</div>
+    	</div>
+
+
+
+
+    	<div class="col-11 col-lg-3 col-md-4 col-sm-6">
+    		<div class="card text-center my-5">
+    			<img src="pics/img21.jpg" height="150px" class="card-img-top">
+    			<div class="card-footer"><button class="btn btn-secondary">Learn More</button>  </div>
+    		</div>
+    	</div>
+
+
+
+
+    	<div class="col-11 col-lg-3 col-md-4 col-sm-6">
+    		<div class="card text-center my-5">
+    			<img src="pics/img22.jpg" height="150px" class="card-img-top">
+    			<div class="card-footer"><button class="btn btn-secondary">Learn More</button>  </div>
+    		</div>
+    	</div>
+
+
+
+
+    	<div class="col-11 col-lg-3 col-md-4 col-sm-6">
+    		<div class="card text-center my-5">
+    			<img src="pics/img29.jpg" height="150px" class="card-img-top">
+    			<div class="card-footer"><button class="btn btn-secondary">Learn More</button>  </div>
+    		</div>
+    	</div>
+
+
+
+
+    	<div class="col-11 col-lg-3 col-md-4 col-sm-6">
+    		<div class="card text-center my-5">
+    			<img src="pics/img28.jpg" height="150px" class="card-img-top">
+    			<div class="card-footer"><button class="btn btn-secondary">Learn More</button>  </div>
+    		</div>
+    	</div>
+
+
+
+    	<div class="col-11 col-lg-3 col-md-4 col-sm-6">
+    		<div class="card text-center my-5">
+    			<img src="pics/img27.png" height="150px" class="card-img-top">
+    			<div class="card-footer"><button class="btn btn-secondary">Learn More</button>  </div>
+    		</div>
+    	</div>
+
+    </div>
+
+
+
+
+					<!---------------our services end------------->
+
+
+
+
+					<!-----------------about us-------------------->
+
+
+	<div class="row my-5 py-5" style="background-color:#333232">
+		
+		<div class="col-lg-3 fs-3 text-center text-light p-4"><b>ABOUT US</b></div>
+
+		<div class="col-lg-9 text-secondary text-center fs-5">Build your brand and business through our interactive attractive and intelligent web designs delhi that work and create exceptional customer experience! We are obsessed with quality, we have the right blend of designers, developers, web experts, and certified professionals. Together we have been delivering successful solutions for hundreds of our clients by now. No matter where you are located, you will fulfill your designing needs in Delhi, Ghaziabad, Gurgaon, Noida, and even Faridabad and Delhi NCR.
+
+		We came into the picture in 2012, and it’s been 8 successful years to date! Web designing Delhi is crucial and we wish to play an important role in your business, to help you launch a site SEO optimized, customer-centric that reflects your business. We aim to cultivate loyal customers and build up for you a level of success!</div>
+
+	</div>
+
+
+
+					<!--------------about us end---------------->
+
+
+
+					<!-------------packages start--------------->
+
+
+
+
+	<div class="row my-5">
+		
+		<div class="col-12 fs-3 text-center my-5"><b>OUR PACKAGES</b></div>
+
+		<div class="col-md-6 col-lg-3 p-3">
+			<div class="card card1 text-center">
+				<div class="card-header bg-secondary text-light py-5 fs-1"><b>STARTUP</b>  </div>
+				<div class="card-body"><button class="bg-light fs-2 rounded-pill px-3">4999/-</button>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">7-8 pages</li>
+						<li class="list-group-item">Domain + Hosting</li>
+						<li class="list-group-item">Business Email Id</li>
+						<li class="list-group-item">Free Maintenance Upto 06 Months</li>
+					</ul>
+				</div>
+				<div class="card-footer"><button class="btn btn-outline-secondary">Book Now</button></div>
+			</div>
+		</div>
+
+
+		<div class="col-md-6 col-lg-3 p-3">
+			<div class="card card1 text-center">
+				<div class="card-header bg-secondary text-light py-5 fs-1"><b>REGULAR</b>  </div>
+				<div class="card-body"><button class="bg-light fs-2 rounded-pill px-3">8999/-</button>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">12-15 pages</li>
+						<li class="list-group-item">Domain + Hosting</li>
+						<li class="list-group-item">Business Email Id</li>
+						<li class="list-group-item">Free Maintenance Upto 01 Year</li>
+					</ul>
+				</div>
+				<div class="card-footer"><button class="btn btn-outline-secondary">Book Now</button></div>
+			</div>
+		</div>
+
+		<div class="col-md-6 col-lg-3 p-3">
+			<div class="card card1 text-center">
+				<div class="card-header bg-secondary text-light py-5 fs-1"><b>PREMIUM</b>  </div>
+				<div class="card-body"><button class="bg-light fs-2 rounded-pill px-3">12999/-</button>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">18-20 pages</li>
+						<li class="list-group-item">LOGO</li>
+						<li class="list-group-item">SSL Certificate</li>
+						<li class="list-group-item">Domain + Hosting</li>
+						<li class="list-group-item">Business Email Id</li>
+						<li class="list-group-item">Free Maintenance Upto 01 Year</li>
+					</ul>
+				</div>
+				<div class="card-footer"><button class="btn btn-outline-secondary">Book Now</button></div>
+			</div>
+		</div>
+
+		<div class="col-md-6 col-lg-3 p-3">
+			<div class="card card1 text-center">
+				<div class="card-header bg-secondary text-light py-5 fs-1"><b>PLATINUM</b>  </div>
+				<div class="card-body"><button class="bg-light fs-2 rounded-pill px-3">18999/-</button>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">20-25 pages</li>
+						<li class="list-group-item">Dynamic Website</li>
+						<li class="list-group-item">Logo</li>
+						<li class="list-group-item">Offline App</li>
+						<li class="list-group-item">SSL Certificate</li>
+						<li class="list-group-item">Domain + Hosting</li>
+						<li class="list-group-item">Business Email Id</li>
+						<li class="list-group-item">Free Maintenance Upto 01 years</li>
+					</ul>
+				</div>
+				<div class="card-footer"><button class="btn btn-outline-secondary">Book Now</button></div>
+			</div>
+		</div>
+	</div>
+
+
+
+							<!------------packages end------------->
+
+
+
+							<!-----------why choose us------------->
+
+
+
+	<div class="row py-5 d-flex justify-content-center bg-light">
+
+		<div class="col-12 text-center fs-1 my-5">WHY CHOOSE US...</div>
+			
+		<div class="col-10 col-sm-6 col-md-4 col-lg-2">
+	        <div class="card img1 m-1 border-0">
+	            <div class="img-overlay py-1">
+	                <h4 class="card-text text-center my-4"><b>WE ARE COMMITED TOWARDS OUR CUSTOMERS</b></h4>
+	            </div>
+	        </div>
+	    </div>
+
+	    <div class="col-10 col-sm-6 col-md-4 col-lg-2">
+	        <div class="card img2 m-1 border-0">
+	            <div class="img-overlay">
+	                <h4 class="card-text text-center my-5"><b>WE HAVE INNOVATIVE IDEAS</b></h4>
+	            </div>
+	        </div>
+	    </div>
+
+	    <div class="col-10 col-sm-6 col-md-4 col-lg-2">
+	        <div class="card img3 m-1 border-0">
+	            <div class="img-overlay py-1">
+	                <h4 class="card-text text-center my-5"><b>WE ARE LOYAL TOWARDS OUR CUSTOMERS</b></h4>
+	            </div>
+	        </div>
+	    </div>
+
+	    <div class="col-10 col-sm-6 col-md-4 col-lg-2">
+	        <div class="card img4 m-1 border-0">
+	            <div class="img-overlay py-1">
+	                <h4 class="card-text text-center my-5"><b>CUSTOMERS ARE SATISFIED BY OUR WORK</b></h4>
+	            </div>
+	        </div>
+	    </div>
+
+	    <div class="col-10 col-sm-6 col-md-4 col-lg-2">
+	        <div class="card img5 m-1 border-0">
+	            <div class="img-overlay py-2">
+	                <h4 class="card-text text-center my-4"><b>WE PROVIDE 24/7 HRS SUPPORT TO CUSTOMERS</b></h4>
+	            </div>
+	        </div>
+	    </div>
+
+	    <div class="col-10 col-sm-6 col-md-4 col-lg-2">
+	        <div class="card img6 m-1 border-0">
+	            <div class="img-overlay py-2">
+	                <h4 class="card-text text-center my-4"><b>WE PROVIDE AFFORDABLE WORK AT LOW COST</b></h4>
+	            </div>
+	        </div>
+	    </div>
+
+	</div>
+
+
+
+
+	               <!-------------why choose us end------------------->
+
+
+
+	               <!-----------------clients---------------------->
+
+
+
+
+	<div class="row text-dark my-5" id="partner">
+
+		<div class="col-12 d-flex justify-content-center mt-5 fs-3"><b>CLIENTS SERVED</b></div>
+
+	</div>
+
+
+
+	<div class="row">
+
+		<div class="container container1">
+			<div class="row">
+		
+				<div class="col-6 col-lg-2 col-md-3 col-sm-4 p-4"><img src="pics/logo.png" height="100px" width="100%"></div>
+				<div class="col-6 col-lg-2 col-md-3 col-sm-4 p-4"><img src="pics/logo1.png" height="100px" width="100%"></div>
+				<div class="col-6 col-lg-2 col-md-3 col-sm-4 p-4"><img src="pics/logo2.jpg" height="100px" width="100%"></div>
+				<div class="col-6 col-lg-2 col-md-3 col-sm-4 p-4"><img src="pics/logo3.png" height="100px" width="100%"></div>
+				<div class="col-6 col-lg-2 col-md-3 col-sm-4 p-4"><img src="pics/logo4.jpg" height="120px" width="100%"></div>
+				<div class="col-6 col-lg-2 col-md-3 col-sm-4 p-4"><img src="pics/logo5.jpg" height="100px" width="100%"></div>
+				<div class="col-6 col-lg-2 col-md-3 col-sm-4 p-4"><img src="pics/logo6.png" height="100px" width="100%"></div>
+				<div class="col-6 col-lg-2 col-md-3 col-sm-4 p-4"><img src="pics/logo7.png" height="100px" width="100%"></div>
+				<div class="col-6 col-lg-2 col-md-3 col-sm-4 p-4"><img src="pics/logo8.png" height="100px" width="100%"></div>
+				<div class="col-6 col-lg-2 col-md-3 col-sm-4 p-4"><img src="pics/logo9.png" height="100px" width="100%"></div>
+				<div class="col-6 col-lg-2 col-md-3 col-sm-4 p-4"><img src="pics/logo10.png" height="130px" width="100%"></div>
+				<div class="col-6 col-lg-2 col-md-3 col-sm-4 p-4"><img src="pics/logo11.jpg" height="100px" width="100%"></div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="row py-5 text-dark">
+		
+		<div class="col-sm-4 text-center p-2"><font size="30px">8+ </font><br><font size="5px" class="text-secondary"><b>years of service</b></font></div>
+
+		<div class="col-sm-4 text-center p-2"><font size="30px">360+ </font><br><font size="5px"class="text-secondary"><b>live projects</b></font></div>
+
+		<div class="col-sm-4 text-center p-2"><font size="30px">1150+ </font><br><font size="5px"class="text-secondary"><b>satisfied clients</b></font></div>
+
+	</div>
+
+
+
+			        <!-------------clients end-------------->
+
+
+
+			        <!--------------testimonials------------->
+
+
+
+
+		
+	<div class="row my-5 justify-content-center">
+		
+		<div class="col-md-5 fs-3 d-flex align-items-center text-center p-5"><b>WHAT DO OUR CLIENTS SAY ABOUT US</b></div>
+
+		<div class="col-md-6 d-flex justify-content-center bg-light" style="opacity:0.5;">
+			
+				<div class="carousel slide" data-bs-ride="carousel" id="carousel">
+					<div class="carousel-inner">
+
+						<div class="carousel-item active">
+							<div class="card border-0">
+								<div class="row bg-light">
+									<div class="col-5">
+										<img src="pics/profile.png" class="img-fluid rounded start">
+									</div>
+
+									<div class="col-7 text-center d-flex align-items-center"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</b>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="card border-0">
+								<div class="row bg-light">
+									<div class="col-5">
+										<img src="pics/profile.png" class="img-fluid rounded start">
+									</div>
+
+									<div class="col-7 text-center d-flex align-items-center"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</b>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="card border-0">
+								<div class="row bg-light">
+									<div class="col-5">
+										<img src="pics/profile.png" class="img-fluid rounded start">
+									</div>
+
+									<div class="col-7 text-center d-flex align-items-center"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</b>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+
+
+						<!------------testimonial end----------------->
+
+
+
+						<!---------------form start------------------->
+
+
+
+	<div class="row my-5 text-dark">
+
+		<div class="col-12 text-center fs-3 my-5"><b>GIVE US YOUR REQUIREMENT..!! WE ARE READY TO WORK</b></div>
+
+		<div class="container container1">
+			<div class="row">
+
+
+				<div class="col-md-5 p-4"><img src="pics/gif.gif" width="100%" height="350px" ></div>
+
+
+				<div class="col-md-7 text-center d-flex align-items-center pt-5">
+					<form>
+						<div class="row m-1">
+							<div class="col"><input type="text" name="text" class="form-control" placeholder="name" required></div>
+						
+							<div class="col"><input type="email" name="text" class="form-control" placeholder="email" required></div>
+
+							<div class="col"><input type="number" name="text" class="form-control" placeholder="number" required></div>
+						</div>
+
+						<div class="row m-1">
+							<div class="col"><textarea placeholder="what you want to build" class="form-control text-center"required></textarea></div>
+						</div>
+
+						
+							<button class="btn btn-success m-3" type="submit">submit</button>
+						
+					</form>
+				</div>
+	</div>
+</div>
+	</div>
+
+
+
+						<!--------------footer start----------------->
+
+
+
+
+	<div class="row mt-5 text-light" id="contact" style="background-color:#333232;">
+		
+		<div class="col-md-6 text-center my-5 p-5">
+			<p class="fs-2 my-3"><b>KAUSHIK'S DIGITAL SOL'N</b></p><br>
+			<p class="fs-4 text-secondary"><b>We are team of young professionals making feasible all your online business needs on your demand with over 8+years of experience with a leading name in the market.</b></p>
+			<p>
+				<a href="https://facebook.com"><i class="fa-brands fa-facebook fs-2 text-secondary"></i></a>
+				<a href="https://whatsapp.com"><i class="fa-brands fa-whatsapp fs-2 text-secondary"></i></a>
+				<a href="https://instagram.com"><i class="fa-brands fa-instagram fs-2 text-secondary"></i></a>
+				<a href="https://twitter.com"><i class="fa-brands fa-twitter fs-2 text-secondary"></i></a>
+			</p>
+		</div>
+
+
+		<div class="col-6 col-md-3 my-5 p-5">
+			
+			<p class="fs-2 my-3 text-center"><b>SERVICES</b></p><br>
+			<b><ul style="list-style-position: inside;">
+				<li>Website Designing</li>
+				<li>Digital Marketing</li>
+				<li>Web Development</li>
+				<li>App Development</li>
+			</ul></b>
+		</div>
+
+
+		<div class="col-6 col-md-3 my-5 p-5">
+			
+			<p class="fs-2 my-3 text-center"><b>TERMS</b></p>
+			<b><ul style="list-style-position: inside;">
+				<li style="margin-top:45px;">Terms & Conditions</li>
+				<li>Refund Policy</li>
+				<li>Privacy Policy</li>
+			</ul></b>
+		</div>
+	</div>
+
+
+
+	<div class="row py-1 bg-light text-center fixed-bottom" style="word-spacing: 10px;box-shadow: 0px -5px 10px #3d3c3c;opacity: 0.8;">
+		<div class="col"><i class="fa-solid fa-phone"></i><b>(IND)91+9111117548</b></div>
+		<div class="col"><i class="fa-solid fa-at text-secondary"></i><b>abc123@gmail.com</b></div>
+		<div class="col"><i class="fa-solid fa-location-dot"></i><b>sec-9 dwarka</b></div>
+	</div>
+	
+
+
+</div>
+	
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">     </script>
+</body>
+</html>

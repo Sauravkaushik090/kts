@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<title></title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Handlee&family=Indie+Flower&family=Roboto:wght@300;400&family=Tapestry&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		
+		*{ font-family: Handlee;margin: 0px;padding: 0px;font-weight: bold; }
+
+		ul li:hover{ font-size: 25px; }
+
+		.card{ transition: box-shadow,margin-top 0.2s,0.2s;cursor: pointer; }
+
+		.card:hover{ box-shadow: 1px 1px 8px #021ffa;margin-top: 5px; }
+
+		.img1:hover
+		{ 
+			background-image: linear-gradient(to right,rgba(1,1,1,0.4),rgba(2,2,2,0.3)),url(pics/img34.webp);
+			background-size: 100% 100%;
+			color: #f7f8fa; 
+		}
+
+		.img1
+		{ 
+			background-image: url(pics/img34.webp);
+			background-size: 100% 100%;
+			color: transparent;
+			border: 1px solid #666769; 
+		}
+
+		.img2:hover
+		{ 
+			background-image: linear-gradient(to right,rgba(5,5,5,0.5),rgba(4,4,4,0.6)),url(pics/img35.jpg);
+			background-size: 100% 100%;
+			color: #f7f8fa; 
+		}
+
+		.img2
+		{ 
+			background-image: url(pics/img35.jpg);
+			background-size: 100% 100%;
+			color: transparent;
+			border: 1px solid #666769; 
+		}
+
+		.img3:hover
+		{ 
+			background-image: linear-gradient(to right,rgba(5,5,5,0.5),rgba(4,4,4,0.6)),url(pics/img36.png);
+			background-size: 100% 100%;
+			color: #f7f8fa; 
+		}
+
+		.img3
+		{ 
+			background-image: url(pics/img36.png);
+			background-size: 100% 100%;
+			color: transparent;
+			border: 1px solid #666769; 
+		}
+
+		.img4:hover
+		{ 
+			background-image: linear-gradient(to right,rgba(5,5,5,0.5),rgba(4,4,4,0.6)),url(pics/img37.jpg);
+			background-size: 100% 100%;
+			color: #f7f8fa; 
+		}
+
+		.img4
+		{ 
+			background-image: url(pics/img37.jpg);
+			background-size: 100% 100%;
+			color: transparent;
+			border: 1px solid #666769; 
+		}
+
+		.img5:hover
+		{ 
+			background-image: linear-gradient(to right,rgba(5,5,5,0.5),rgba(4,4,4,0.6)),url(pics/img38.jpg);
+			background-size: 100% 100%;
+			color: #f7f8fa; 
+		}
+
+		.img5
+		{ 
+			background-image: url(pics/img38.jpg);
+			background-size: 100% 100%;
+			color: transparent;
+			border: 1px solid #666769; 
+		}
+
+		.img6:hover
+		{ 
+			background-image: linear-gradient(to right,rgba(5,5,5,0.5),rgba(4,4,4,0.6)),url(pics/img39.jpg);
+			background-size: 100% 100%;
+			color: #f7f8fa; 
+		}
+
+		.img6
+		{ 
+			background-image: url(pics/img39.jpg);
+			background-size: 100% 100%;
+			color: transparent;
+			border: 1px solid #666769; 
+		}
+
+		.img7:hover
+		{ 
+			background-image: linear-gradient(to right,rgba(5,5,5,0.5),rgba(4,4,4,0.6)),url(pics/img40.webp);
+			background-size: 100% 100%;
+			color: #f7f8fa; 
+		}
+
+		.img7
+		{ 
+			background-image: url(pics/img40.webp);
+			background-size: 100% 100%;
+			color: transparent;
+			border: 1px solid #666769; 
+		}
+
+		.img8:hover
+		{ 
+			background-image: linear-gradient(to right,rgba(5,5,5,0.5),rgba(4,4,4,0.6)),url(pics/img41.jpg);
+			background-size: 100% 100%;
+			color: #f7f8fa; 
+		}
+
+		.img8
+		{ 
+			background-image: url(pics/img41.jpg);
+			background-size: 100% 100%;
+			color: transparent;
+			border: 1px solid #666769; 
+		}
+
+		.img9:hover
+		{ 
+			background-image: linear-gradient(to right,rgba(5,5,5,0.5),rgba(4,4,4,0.6)),url(pics/img42.webp);
+			background-size: 100% 100%;
+			color: #f7f8fa; 
+		}
+
+		.img9
+		{ 
+			background-image: url(pics/img42.webp);
+			background-size: 100% 100%;
+			color: transparent;
+			border: 1px solid #666769; 
+		}
+
+	</style>
+</head>
+<body style="background-image:url(pics/wallpaper.webp);background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
+
+
+<div class="container-fluid">
+	
+
+						<!---------------navbar start----------------->
+
+	
+	<div class="row">
+		
+		<div class="col-12 fixed-top bg-light text-center" style="box-shadow: 0px 10px 10px #3d3c3c;"><a href="project.html"><i class="fa-solid fa-house-user fs-1 text-secondary"></i></a></div>
+
+	</div>
+
+
+
+
+							<!-----------navbar end---------------->
+
+
+	<div class="row" style="background-image:url(pics/work.jpg);background-size: 100% 100%;margin-top:20px;">
+		
+		<div class="col-12 text-center text-light fs-1 my-5 py-5"><p>OUR WORK</p></div>
+	</div>
+
+
+
+							<!-----------work start---------------->
+
+
+
+
+	<div class="row py-5 mb-4 text-light justify-content-end" style="background-image:linear-gradient(to right,rgba(5,5,5,0.6),rgba(4,4,4,0.5)),url(pics/img9.webp);background-size: 100% 100%;background-repeat: no-repeat;">
+		
+		<div class="col-12 w-50 py-5 text-center">
+			
+			<p class="fs-3">WE CREATE SIMPLE SOLUTION</p>
+			<p class="fs-3">FOR YOUR COMPLEX PROBLEMS</p>
+			<p class="fs-5 text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex</p>
+
+			<button class="btn btn-primary">EXPLORE MORE</button>
+		</div>
+	</div>
+
+
+
+							<!--------work end----------->
+
+
+
+							<!-------process start------->
+
+
+
+
+	<div class="row">
+		
+		<div class="col-md-6 text-center mt-4">
+			<p class="fs-1">THE PROCESS</p>
+			<p class="fs-1" style="margin-top:-20px;">ABOUT OUR WORK</p>
+			<p class="fs-4 text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<button class="btn btn-secondary">EXPLORE MORE</button>
+		</div>
+		<div class="col-md-6 mt-4"><img src="pics/img32.webp" width="100%"></div>
+	</div>
+
+
+
+							<!------process end-------->
+
+
+							<!-----best work start----->
+
+
+
+	<div class="row">
+
+		<div class="col-12 fs-1 text-center my-5">WHAT WE DO</div>
+
+		<div class="col-sm-6 col-md-3 p-3">
+			<div class="card text-center fs-4 bg-light">
+				<div class="card-header">App development</div>
+				<div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+
+		<div class="col-sm-6 col-md-3 p-3">
+			<div class="card text-center fs-4 bg-light">
+				<div class="card-header">Mobility Services</div>
+				<div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+
+		<div class="col-sm-6 col-md-3 p-3">
+			<div class="card text-center fs-4 bg-light">
+				<div class="card-header">Consulting</div>
+				<div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+
+		<div class="col-sm-6 col-md-3 p-3">
+			<div class="card text-center fs-4 bg-light">
+				<div class="card-header">SEO Services</div>
+				<div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+						<!-------------our best work start------------->
+
+
+
+
+	<div class="row text-dark my-5" id="partner">
+
+		<div class="col-12 d-flex justify-content-center my-5 fs-3"><b>SOME OF OUR WORKS</b>    </div>
+
+
+		<div class="col-sm-6 col-md-4 img1 text-center">
+			<p class="fs-2" style="margin-top:100px;margin-bottom: 100px;">CARPET CLEANING</p>
+		</div>
+
+		<div class="col-sm-6 col-md-5 img2 text-center">
+			<p class="fs-2" style="margin-top:100px;margin-bottom: 100px;">LAUNDRY SERVICES</p>
+		</div>
+
+		<div class="col-sm-6 col-md-3 img3 text-center">
+			<p class="fs-2" style="margin-top:100px;margin-bottom: 100px;">NINE STARS</p>
+		</div>
+
+		<div class="col-sm-6 col-md-6 img4 text-center">
+			<p class="fs-2" style="margin-top:160px;margin-bottom: 100px;">ORBITOR</p>
+		</div>
+
+		<div class="col-sm-6 col-md-6 img5 text-center">
+			<p class="fs-2" style="margin-top:160px;margin-bottom: 100px;">EVANA</p>
+		</div>
+
+		<div class="col-sm-6 col-md-3 img6 text-center">
+			<p class="fs-2" style="margin-top:80px;margin-bottom: 100px;">INDUSTRIES</p>
+		</div>
+
+		<div class="col-sm-6 col-md-3 img7 text-center">
+			<p class="fs-2" style="margin-top:80px;margin-bottom: 100px;">SOFTDASH</p>
+		</div>
+
+		<div class="col-sm-6 col-md-3 img8 text-center">
+			<p class="fs-2" style="margin-top:80px;margin-bottom: 100px;">COMPANY</p>
+		</div>
+
+		<div class="col-sm-6 col-md-3 img9 text-center">
+			<p class="fs-2" style="margin-top:80px;margin-bottom: 100px;">SEOMARKET</p>
+		</div>
+
+	</div>
+
+
+
+	
+			        <!-------------our best work end-------------->
+
+
+
+			        <!--------------testimonials------------->
+
+
+
+
+		
+	<div class="row my-5 justify-content-center">
+		
+		<div class="col-md-5 fs-3 d-flex align-items-center text-center p-5"><b>WHAT DO OUR CLIENTS SAY ABOUT US</b></div>
+
+		<div class="col-md-6 d-flex justify-content-center bg-light" style="opacity:0.5;">
+			
+				<div class="carousel slide" data-bs-ride="carousel" id="carousel">
+					<div class="carousel-inner">
+
+						<div class="carousel-item active">
+							<div class="card border-0">
+								<div class="row bg-light">
+									<div class="col-5">
+										<img src="pics/profile.png" class="img-fluid rounded start">
+									</div>
+
+									<div class="col-7 text-center d-flex align-items-center"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</b>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="card border-0">
+								<div class="row bg-light">
+									<div class="col-5">
+										<img src="pics/profile.png" class="img-fluid rounded start">
+									</div>
+
+									<div class="col-7 text-center d-flex align-items-center"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</b>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="card border-0">
+								<div class="row bg-light">
+									<div class="col-5">
+										<img src="pics/profile.png" class="img-fluid rounded start">
+									</div>
+
+									<div class="col-7 text-center d-flex align-items-center"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</b>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+
+
+						<!------------testimonial end----------------->
+
+
+						<!--------------footer start----------------->
+
+
+
+
+	<div class="row mt-5 text-light" id="contact" style="background-color:#2e2e2d;">
+		
+		<div class="col-md-6 text-center my-5 p-5">
+			<p class="fs-2 my-3"><b>KAUSHIK'S DIGITAL SOL'N</b></p><br>
+			<p class="fs-4 text-secondary"><b>We are team of young professionals making feasible all your online business needs on your demand with over 8+years of experience with a leading name in the market.</b></p>
+			<p>
+				<a href="https://facebook.com"><i class="fa-brands fa-facebook fs-2 text-secondary"></i></a>
+				<a href="https://whatsapp.com"><i class="fa-brands fa-whatsapp fs-2 text-secondary"></i></a>
+				<a href="https://instagram.com"><i class="fa-brands fa-instagram fs-2 text-secondary"></i></a>
+				<a href="https://twitter.com"><i class="fa-brands fa-twitter fs-2 text-secondary"></i></a>
+			</p>
+		</div>
+
+
+		<div class="col-6 col-md-3 my-5 p-5">
+			
+			<p class="fs-2 my-3 text-center"><b>SERVICES</b></p><br>
+			<b><ul style="list-style-position: inside;">
+				<li>Website Designing</li>
+				<li>Digital Marketing</li>
+				<li>Web Development</li>
+				<li>App Development</li>
+			</ul></b>
+		</div>
+
+
+		<div class="col-6 col-md-3 my-5 p-5">
+			
+			<p class="fs-2 my-3 text-center"><b>TERMS</b></p>
+			<b><ul style="list-style-position: inside;">
+				<li style="margin-top:45px;">Terms & Conditions</li>
+				<li>Refund Policy</li>
+				<li>Privacy Policy</li>
+			</ul></b>
+		</div>
+	</div>
+
+
+
+	<div class="row py-1 bg-light text-center fixed-bottom" style="word-spacing: 10px;box-shadow: 0px -5px 10px #3d3c3c;opacity: 0.7;">
+		<div class="col"><i class="fa-solid fa-phone"></i><b>(IND)91+9111117548</b></div>
+		<div class="col"><i class="fa-solid fa-at text-secondary"></i><b>abc123@gmail.com</b></div>
+		<div class="col"><i class="fa-solid fa-location-dot"></i><b>sec-9 dwarka</b></div>
+	</div>
+	
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">     </script>
+</body>
+</html>
